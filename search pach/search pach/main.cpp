@@ -68,6 +68,15 @@ int main() {
     
     shape.setFillColor(Color::Red);
 
+    Vector2u windowSize = window.getSize();
+
+    FloatRect bounds = shape.getLocalBounds();
+
+    float x = (windowSize.x / 2.0f) - (bounds.width / 2.0f);
+    float y = (windowSize.y / 2.0f) - (bounds.height / 2.0f);
+
+    shape.setPosition(x, y);
+
     while (window.isOpen()) {
         Event event;
         while (window.pollEvent(event)) {
