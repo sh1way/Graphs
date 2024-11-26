@@ -5,6 +5,7 @@
 #include <cstdlib>
 
 using namespace std;
+using namespace sf;
 
 int** createG(int size) {
     int** G = (int**)malloc(size * sizeof(int*));
@@ -60,6 +61,25 @@ int main() {
     sumEdges(G, nG, edges);
 
     cout << "\n" << edges << endl;
+
+    RenderWindow window(VideoMode(1200, 800), "123");
+    
+    CircleShape shape(250);
+    
+    shape.setFillColor(Color::Red);
+
+    while (window.isOpen()) {
+        Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == Event::Closed) {
+                window.close();
+            }
+        }
+        window.clear();
+        window.draw(shape);
+        window.draw(shape);
+        window.display();
+    }
 
     return 0;
 }
