@@ -1,3 +1,4 @@
 ﻿  main.cpp
-D:\graphs\search pach\search pach\main.cpp(53,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\graphs\search pach\search pach\main.cpp(58,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\graphs\search pach\search pach\main.cpp(100,21): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
   search pach.vcxproj -> D:\graphs\search pach\x64\Debug\search pach.exe
