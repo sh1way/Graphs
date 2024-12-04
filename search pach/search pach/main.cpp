@@ -32,6 +32,83 @@ void printG(int** G, int size) {
     }
 }
 
+bool isSafe(int v, int** G, vector<int>& path, int pos) {
+    if (G[path[pos - 1]][v] == 0) return false; // Нет ребра между последней и текущей вершиной
+    for (int i = 0; i < pos; i++) {
+        if (path[i] == v) return false; // Вершина уже была в пути
+    }
+    return true;
+}
+
+void hamiltonianCycleUtil(int** G, vector<int>& path, int pos, int size, vector<vector<int>>& allPaths) {
+    if (pos == size) {
+        if (G[path[pos - 1]][path[0]] > 0) {
+            allPaths.push_back(path); // Сохраняем найденный цикл
+        }
+        return;
+    }
+
+    for (int v = 1; v < size; v++) {
+        if (isSafe(v, G, path, pos)) {
+            path[pos] = v;
+            hamiltonianCycleUtil(G, path, pos + 1, size, allPaths);
+            path[pos] = -1; // Откат
+        }
+    }
+}
+
+// Функция для подсчета веса цикла
+int calculateCycleWeight(int** G, const vector<int>& path) {
+    int weight = 0;
+    for (int i = 0; i < path.size() - 1; i++) {
+        weight += G[path[i]][path[i + 1]]; // Суммируем веса рёбер
+    }
+    weight += G[path[path.size() - 1]][path[0]]; // Добавляем вес ребра между последней и первой вершинами
+    return weight;
+}
+
+void findAllHamiltonianCycles(int** G, int size, int start) {
+    vector<int> path(size, -1);
+    path[0] = start; // Стартовая вершина
+
+    vector<vector<int>> allPaths;
+    hamiltonianCycleUtil(G, path, 1, size, allPaths);
+
+    if (allPaths.empty()) {
+        cout << "Гамильтонов циклов не существует." << endl;
+    }
+    else {
+        cout << "Найдено Гамильтонов циклов: " << allPaths.size() << endl;
+
+        // Перебираем все найденные циклы, выводим их и считаем их веса
+        int minWeight = INT_MAX;
+        vector<int> shortestCycle;
+
+        for (const auto& cycle : allPaths) {
+            // Выводим цикл
+            for (int v : cycle) {
+                cout << v + 1 << " "; // Вершины выводятся с 1, а не с 0
+            }
+            cout << cycle[0] + 1 << endl; // Возвращаемся в начало
+            int weight = calculateCycleWeight(G, cycle); // Рассчитываем вес этого цикла
+            cout << "Вес цикла: " << weight << endl;
+
+            // Находим минимальный вес
+            if (weight < minWeight) {
+                minWeight = weight;
+                shortestCycle = cycle;
+            }
+        }
+
+        // Выводим цикл с минимальным весом
+        cout << "\nСамый короткий Гамильтонов цикл (с минимальным весом " << minWeight << "): ";
+        for (int v : shortestCycle) {
+            cout << v + 1 << " "; // Вершины выводятся с 1, а не с 0
+        }
+        cout << shortestCycle[0] + 1 << endl; // Возвращаемся в начало
+    }
+}
+
 Color getEdgeColor(int weight) {
     switch (weight) {
     case 1: return Color(255, 0, 0);
@@ -139,11 +216,27 @@ void drawMenu(RenderWindow& window, const Font& font) {
 
 int main() {
     srand(time(NULL));
+    //42 для 1 вершины - 4 пути
+    //для ручной проверки
+    srand(42);
     setlocale(LC_ALL, "Russian");
 
     const int nG = 7;
     int** G = createG(nG);
     printG(G, nG);
+
+    int start;
+    cout << "Введите номер стартовой вершины (1 - " << nG << "): ";
+    cin >> start;
+    start -= 1; // Преобразуем в индекс (с 0, а не с 1)
+
+    // Проверяем правильность ввода
+    if (start < 0 || start >= nG) {
+        cout << "Неверный номер вершины!" << endl;
+        return -1;
+    }
+
+    findAllHamiltonianCycles(G, nG, start);
 
     RenderWindow window(VideoMode(1400, 800), "Graf");
     Font font;
