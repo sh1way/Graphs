@@ -1,9 +1,8 @@
-﻿  main.cpp
-D:\graphs\search pach\search pach\main.cpp(150,38): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-D:\graphs\search pach\search pach\main.cpp(159,21): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\graphs\search pach\search pach\main.cpp(218,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\graphs\search pach\search pach\main.cpp(264,34): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\graphs\search pach\search pach\main.cpp(267,34): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+﻿  Rendering.cpp
+D:\graphs\search pach\search pach\Rendering.cpp(47,38): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+D:\graphs\search pach\search pach\Rendering.cpp(56,21): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\graphs\search pach\search pach\Rendering.cpp(138,34): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\graphs\search pach\search pach\Rendering.cpp(141,34): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
 sfml-graphics-s-d.lib(Transformable.obj) : warning LNK4099: "" PDB не найден с "sfml-graphics-s-d.lib(Transformable.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
 sfml-graphics-s-d.lib(Color.obj) : warning LNK4099: "" PDB не найден с "sfml-graphics-s-d.lib(Color.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
 sfml-graphics-s-d.lib(Vertex.obj) : warning LNK4099: "" PDB не найден с "sfml-graphics-s-d.lib(Vertex.obj)" или на ""; компоновка объекта выполняется как при отсутствии отладочных данных
