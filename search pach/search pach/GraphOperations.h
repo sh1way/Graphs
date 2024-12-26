@@ -10,6 +10,7 @@ void hamiltonianCycleUtil(int** G, std::vector<int>& path, int pos, int size, st
 int calculateCycleWeight(int** G, const std::vector<int>& path);
 void findAllHamiltonianCycles(int** G, int size, int start);
 int** initGraph(int size);
-int handleUserInput(int size);
+int handleUserInputStart(int size);
+int handleUserInputSize();
 
 #endif

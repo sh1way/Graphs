@@ -76,9 +76,10 @@ void findAllHamiltonianCycles(int** G, int size, int start) {
         int minWeight = INT_MAX;
         vector<int> shortestCycle;
 
-        for (const auto& cycle : allPaths) {
-            for (int v : cycle) {
-                cout << v + 1 << " ";
+        for (size_t i = 0; i < allPaths.size(); i++) {
+            vector<int>& cycle = allPaths[i];
+            for (size_t j = 0; j < cycle.size(); j++) {
+                cout << cycle[j] + 1 << " ";
             }
             cout << cycle[0] + 1 << endl;
             int weight = calculateCycleWeight(G, cycle);
@@ -91,12 +92,13 @@ void findAllHamiltonianCycles(int** G, int size, int start) {
         }
 
         cout << "\nСамый короткий Гамильтонов цикл (с минимальным весом " << minWeight << "): ";
-        for (int v : shortestCycle) {
-            cout << v + 1 << " ";
+        for (size_t k = 0; k < shortestCycle.size(); ++k) {
+            cout << shortestCycle[k] + 1 << " ";
         }
         cout << shortestCycle[0] + 1 << endl;
     }
 }
+
 
 int** initGraph(int size) {
     int** G = createG(size);
@@ -104,7 +106,7 @@ int** initGraph(int size) {
     return G;
 }
 
-int handleUserInput(int size) {
+int handleUserInputStart(int size) {
     int start;
     cout << "Введите номер стартовой вершины (1 - " << size << "): ";
     cin >> start;
@@ -115,4 +117,16 @@ int handleUserInput(int size) {
         exit(-1);
     }
     return start;
+}
+
+int handleUserInputSize() {
+    int nG;
+    cout << "Введите размер графа(от 1 - 20): ";
+    cin >> nG;
+
+    if (nG < 1 || nG>20) {
+        cout << "Неверный размер графа!" << endl;
+        exit(-1);
+    }
+    return nG;
 }

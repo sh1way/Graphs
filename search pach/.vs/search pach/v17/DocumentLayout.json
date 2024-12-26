@@ -19,12 +19,12 @@
       "RelativeMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|solutionrelative:search pach\\Rendering.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|D:\\graphs\\search pach\\search pach\\Rendering.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|solutionrelative:search pach\\Rendering.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|D:\\graphs\\search pach\\search pach\\const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|solutionrelative:search pach\\const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|D:\\graphs\\search pach\\search pach\\Rendering.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|solutionrelative:search pach\\Rendering.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "const.h",
               "DocumentMoniker": "D:\\graphs\\search pach\\search pach\\const.h",
               "RelativeDocumentMoniker": "search pach\\const.h",
@@ -46,21 +46,19 @@
               "RelativeToolTip": "search pach\\const.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-24T22:12:17.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T22:12:17.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Rendering.cpp",
               "DocumentMoniker": "D:\\graphs\\search pach\\search pach\\Rendering.cpp",
               "RelativeDocumentMoniker": "search pach\\Rendering.cpp",
               "ToolTip": "D:\\graphs\\search pach\\search pach\\Rendering.cpp",
               "RelativeToolTip": "search pach\\Rendering.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAwwJ4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-24T22:09:02.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T22:09:02.859Z"
             },
             {
               "$type": "Document",
@@ -70,7 +68,7 @@
               "RelativeDocumentMoniker": "search pach\\GraphOperations.cpp",
               "ToolTip": "D:\\graphs\\search pach\\search pach\\GraphOperations.cpp",
               "RelativeToolTip": "search pach\\GraphOperations.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAEcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-24T22:08:49.215Z",
               "EditorCaption": ""
@@ -83,7 +81,7 @@
               "RelativeDocumentMoniker": "search pach\\Rendering.h",
               "ToolTip": "D:\\graphs\\search pach\\search pach\\Rendering.h",
               "RelativeToolTip": "search pach\\Rendering.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-24T22:07:19.86Z",
               "EditorCaption": ""
@@ -96,7 +94,7 @@
               "RelativeDocumentMoniker": "search pach\\GraphOperations.h",
               "ToolTip": "D:\\graphs\\search pach\\search pach\\GraphOperations.h",
               "RelativeToolTip": "search pach\\GraphOperations.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-24T22:07:03.976Z",
               "EditorCaption": ""
@@ -109,7 +107,7 @@
               "RelativeDocumentMoniker": "search pach\\main.cpp",
               "ToolTip": "D:\\graphs\\search pach\\search pach\\main.cpp",
               "RelativeToolTip": "search pach\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-23T17:45:59.038Z",
               "EditorCaption": ""
