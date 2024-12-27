@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\graphs\\search pach\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|D:\\graphs\\search pach\\search pach\\GraphOperations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|solutionrelative:search pach\\GraphOperations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|D:\\graphs\\search pach\\search pach\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|solutionrelative:search pach\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|D:\\graphs\\search pach\\search pach\\GraphOperations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|solutionrelative:search pach\\GraphOperations.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5F4B51F-D794-46B1-BBD4-4C9D988078D4}|search pach\\search pach.vcxproj|D:\\graphs\\search pach\\search pach\\GraphOperations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -62,13 +62,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GraphOperations.cpp",
               "DocumentMoniker": "D:\\graphs\\search pach\\search pach\\GraphOperations.cpp",
               "RelativeDocumentMoniker": "search pach\\GraphOperations.cpp",
               "ToolTip": "D:\\graphs\\search pach\\search pach\\GraphOperations.cpp",
               "RelativeToolTip": "search pach\\GraphOperations.cpp",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAAEcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAEcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-24T22:08:49.215Z",
               "EditorCaption": ""
@@ -83,8 +83,7 @@
               "RelativeToolTip": "search pach\\Rendering.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-24T22:07:19.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T22:07:19.86Z"
             },
             {
               "$type": "Document",
@@ -96,18 +95,17 @@
               "RelativeToolTip": "search pach\\GraphOperations.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAgwA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-24T22:07:03.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T22:07:03.976Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\graphs\\search pach\\search pach\\main.cpp",
               "RelativeDocumentMoniker": "search pach\\main.cpp",
               "ToolTip": "D:\\graphs\\search pach\\search pach\\main.cpp",
               "RelativeToolTip": "search pach\\main.cpp",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwCoAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwC0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-23T17:45:59.038Z",
               "EditorCaption": ""
